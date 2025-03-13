@@ -1,0 +1,32 @@
+.header-menu-mobile {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  background-color: var(--primary-white);
+  /* width: 60vw;
+   */
+  width: 100%;
+  max-width: 768px !important;
+
+  height: 100vh;
+}
+
+.header-menu-mobile ul {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.header-menu-mobile ul li {
+  font-size: 24px;
+  color: #000;
+  transition: color 0.45s ease;
+
+  &:hover {
+    color: var(--primary-orange);
+  }
+}
+
+#close-button {
+  width: 30px;
+  height: 30px;
+}

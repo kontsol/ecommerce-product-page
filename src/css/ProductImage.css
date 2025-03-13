@@ -1,0 +1,24 @@
+.product-image {
+  position: relative;
+}
+
+.main-product-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .main-product-image {
+    /* height: 400px; */
+  }
+}
+
+.arrows-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
