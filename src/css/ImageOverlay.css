@@ -1,20 +1,38 @@
 .image-overlay {
-}
-
-.image-overlay img {
-  position: absolute;
-  width: 700px;
-  height: 600px;
-  top: 0;
-  left: 50%;
-  z-index: 101;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
 .background-overlay {
-  background-color: rgba(0, 0, 0, 0.659);
-  position: fixed;
+  position: absolute;
   inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#overlay-product-image {
+  border-radius: 12px;
+  z-index: 1002;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.5rem;
+  max-width: 600px;
   width: 100%;
-  height: 100%;
-  z-index: 100;
+}
+
+.image-overlay-small-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1002;
+  flex-wrap: wrap;
 }

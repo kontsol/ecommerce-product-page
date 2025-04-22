@@ -93,8 +93,7 @@ const ProductImage = () => {
       {isOverlayOpen && (
         <ImageOverlay
           isOverlayOpen={handleToggleOverlay}
-          // image={imageState.mainImage}
-          images={IMAGES}
+          images={IMAGES[imageState.currentIndex]}
           currentIndex={imageState.currentIndex}
           onClose={handleToggleOverlay}
           onImageChange={handleMainImage}

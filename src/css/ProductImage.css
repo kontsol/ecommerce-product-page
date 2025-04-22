@@ -1,5 +1,6 @@
 .product-image {
   position: relative;
+  border: 2px solid lime;
 }
 
 .main-product-image {
