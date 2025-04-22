@@ -6,6 +6,12 @@ const ImageOverlay = ({ images, currentIndex, onClose, onImageChange }) => {
     <div className="image-overlay">
       {onClose && <div className="background-overlay" onClick={onClose}></div>}
       <img
+        src={`${process.env.PUBLIC_URL}/images/icon-close.svg`}
+        alt="Close button"
+        id="close-button"
+        onClick={onClose}
+      />
+      <img
         id="overlay-product-image"
         src={`${process.env.PUBLIC_URL + images}`}
         alt=""
@@ -21,4 +27,3 @@ const ImageOverlay = ({ images, currentIndex, onClose, onImageChange }) => {
 };
 
 export default ImageOverlay;
-// TODO add X button

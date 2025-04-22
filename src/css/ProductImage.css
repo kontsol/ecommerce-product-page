@@ -1,6 +1,5 @@
 .product-image {
   position: relative;
-  border: 2px solid lime;
 }
 
 .main-product-image {
@@ -8,13 +7,9 @@
   display: block;
   width: 100%;
   object-fit: fill;
-  background-color: blue;
 }
 
 @media screen and (max-width: 768px) {
-  .main-product-image {
-    /* height: 400px; */
-  }
 }
 
 .arrows-buttons {
